@@ -1,13 +1,13 @@
 {
-  "name": "flashcards",
+  "name": "Beer_App",
   "version": "1.0.0",
-  "description": "",
+  "description": "Beer app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nicolas",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
