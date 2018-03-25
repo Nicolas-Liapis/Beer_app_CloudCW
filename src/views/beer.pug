@@ -1,0 +1,20 @@
+extends layout.pug
+
+block content
+  section#content
+    h2= text
+      p
+        i Name: #{beerName}
+        br
+        br
+        i Description: #{beerDesc}
+
+    a(href='/beers')
+      button(type="button") Next Beer
+    br
+    br
+    form(name="addbeer",method="post")
+      button(type="submit") Save Beer
+    br
+    h3 Your favourites:
+    i  #{beerArray}
