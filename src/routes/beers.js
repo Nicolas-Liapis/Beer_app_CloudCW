@@ -10,7 +10,7 @@ let name;
 
 
 //Next beer button makes a new api call
-//accesses database beers and collection beerlist 
+//accesses database beers and collection beerlist
 router.get('/', (req, res) => {
 
   axios

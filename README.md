@@ -8,11 +8,14 @@ This app was made using node.js, express.js, pug and the database is powered by 
 
 Docker image from a parent image using a Dockerfile  running on node carbon.
 
-Port used: 3000
 
 To run the app:
 
 First make sure you have node with npm installed.
+
+cd to path/src and run 'nodemon'  instead of  'npm start'
+
+App uses Port: 3000. In browser type: http://localhost:3000/
 
 Start mongo: $mongod --dbpath <...>
 
