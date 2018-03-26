@@ -32,3 +32,30 @@ $ docker build -t <username>/node-web-app .
 To run:
 
 $ docker run -p 49160:3000 -d <your username>/node-web-app
+
+Database secured with role-based policy:
+
+{
+  "_id": "beers.admin",
+  "user": "admin",
+  "db": "beers",
+  "roles": [
+    {
+      "role": "root",
+      "db": "admin"
+    }
+  ]
+},
+{
+  "_id": "beers.myTester",
+  "user": "myTester",
+  "db": "beers",
+  "roles": [
+    {
+      "role": "readWrite",
+      "db": "test"
+    },
+    {
+      "role": "read",
+      "db": "reporting"
+    }
