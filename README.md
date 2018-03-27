@@ -28,7 +28,7 @@ Dockerfile, .dockerignore, docker-compose files included
 
 To run it:
 
-cd to the project directory: /beer_app/Beer_app_CloudCW/src
+cd to the project directory: /beer_app/Beer_app_CloudCW
 
 type command: $ docker-compose up
 
