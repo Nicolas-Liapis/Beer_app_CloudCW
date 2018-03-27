@@ -32,9 +32,7 @@ cd to the project directory: /beer_app/Beer_app_CloudCW
 
 type command: $ docker-compose up
 
-open a browser at port:8080
-
-App runs on port:8080
+open a browser at http://localhost:8080
 
 
 ---Database secured with role-based policy:
@@ -63,3 +61,5 @@ App runs on port:8080
       "role": "read",
       "db": "reporting"
     }
+
+Enjoy the app and drink responsibly! ;)
