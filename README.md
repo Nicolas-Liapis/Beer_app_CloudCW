@@ -26,9 +26,13 @@ Database name: 'beers' ; collection name: 'beerlist'.
 
 Dockerfile, .dockerignore, docker-compose files included
 
-To run:
+To run it:
 
-$ docker-compose up
+cd to the project directory: /beer_app/Beer_app_CloudCW/src
+
+type command: $ docker-compose up
+
+open a browser at port:8080
 
 App runs on port:8080
 
