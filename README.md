@@ -9,7 +9,7 @@ This app was made using node.js, express.js, pug and the database is powered by 
 Docker image from a parent image using a Dockerfile  running on node carbon.
 
 
-To run the app:
+---To run the app locally:
 
 First make sure you have node with npm installed.
 
@@ -21,19 +21,19 @@ Start mongo: $mongod --dbpath <...>
 
 Database name: 'beers' ; collection name: 'beerlist'.
 
-Docker:
 
-Dockerfile and .dockerignore files included
+---To run from Docker image:
 
-to build image:
-
-$ docker build -t <username>/node-web-app .
+Dockerfile, .dockerignore, docker-compose files included
 
 To run:
 
-$ docker run -p 49160:3000 -d <your username>/node-web-app
+$ docker-compose up
 
-Database secured with role-based policy:
+App runs on port:8080
+
+
+---Database secured with role-based policy:
 
 {
   "_id": "beers.admin",

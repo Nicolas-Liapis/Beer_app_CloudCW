@@ -1,17 +1,17 @@
 FROM node:carbon
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /usr/src/
 
 # Install app dependencies
 
-COPY package.json ./
+COPY src/package.json ./
 
 RUN npm install
 
 
 # Bundle app source
-COPY . /src
+COPY src /usr/src
 
 EXPOSE 3000
 CMD [ "npm", "start" ]

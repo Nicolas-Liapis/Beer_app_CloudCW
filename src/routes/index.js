@@ -3,7 +3,6 @@ const router = express.Router();
 
 // Redirects localhost home to log in page
 //if no username has been given
-
 router.get('/', (req, res) => {
     const username = req.cookies.username;
     if (username) {

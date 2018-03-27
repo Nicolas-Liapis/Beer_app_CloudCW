@@ -3,7 +3,7 @@ const router = express.Router();
 const axios = require('axios');
 const url = 'https://api.punkapi.com/v2/beers/random';
 const MongoClient = require('mongodb').MongoClient;
-var urlDB = "mongodb://localhost:27017/";
+var urlDB = "mongodb://mongo:27017/";
 
 //Global variable name of beer
 let name;
